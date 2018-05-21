@@ -1,4 +1,6 @@
 # Building REST APIs using ASP.NET Core and Entity Framework Core
+[![Build status](https://ci.appveyor.com/api/projects/status/github/chsakell/dotnetcore-entityframework-api?branch=master&svg=true)](https://ci.appveyor.com/project/chsakell/dotnetcore-entityframework-api/branch/master)
+
 <a href="http://wp.me/p3mRWu-18G" taget="_blank">Blog post</a><br/>
 Frameworks - Packages - Patterns - Features used
 <ul>
@@ -19,13 +21,13 @@ Frameworks - Packages - Patterns - Features used
 
 <h3>Installation Instructions (2) - Visual Studio</h3>
 <ol>
-<li>Open the solution in VS 2015</li>
+<li>Open the solution in VS 2017</li>
 <li>Open Package Manager Console and navigate to Scheduler.API by typing cd <i>path_to_Scheduler.API</i></li>
 <li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>run the following commands
 <ol>
-<li><b>dotnet ef migrations add "initial"</b></li>
-<li><b>dotnet ef database update</b></li>
+<li><b>Add-Migration Initial</b></li>
+<li><b>Update-Database</b></li>
 </ol>
 </li>
 <li>Build and run the Scheduler.API project</li>
@@ -44,8 +46,8 @@ Frameworks - Packages - Patterns - Features used
 <li>Modify the connection string in <i>appsettings.json</i> to reflect your database environment</li>
 <li>While at Scheduler.API run the following commands
 <ol>
-<li><b>dotnet ef migrations add "initial"</b></li>
-<li><b>dotnet ef database update</b></li>
+<li><b>Add-Migration Initial</b></li>
+<li><b>Update-Database</b></li>
 </ol>
 </li>
 <li>While at Scheduler.API run <b>dotnet run</b></li>
